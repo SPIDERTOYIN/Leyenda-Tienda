@@ -144,14 +144,12 @@ function mostrarProductos(categoria, pagina = 1) {
     }
 }
 
-        function comprar(nombre) {
-            const mensaje = encodeURIComponent(`Hola, quiero comprar ${nombre}. ¿Está disponible?`);
-            window.open(`https://wa.me/5218713774088?text=${mensaje}`, '_blank');
-        }
-        
-function comprar(enlace, nombre) {
+function comprar(nombre) {
     const mensaje = `Hola, quiero comprar ${nombre}. ¿Está disponible?`;
+    const url = `https://wa.me/5218713774088?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
 }
+
 
     </script>
 </body>
