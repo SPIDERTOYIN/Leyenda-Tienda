@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    background: radial-gradient(circle, #1a1a1a 10%, #2a2a2a 40%, #1a1a1a 90%);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva elegante */
+    background: linear-gradient(180deg, #ffd700, #ffcc00, #b8860b);
+    background-clip: text;  
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 12px rgba(255, 215, 0, 0.9),
+                 0px 0px 20px rgba(255, 215, 0, 0.6);
+    padding: 20px;
+    margin-top: 0;
+}
+
+/* Sección de categorías */
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.categoria img {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.categoria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.5);
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio arriba */
+}
+
+.pagina-btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 5px 10px;  /* Tamaño más pequeño */
+    font-size: 14px;  /* Texto más pequeño */
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 3px;
+    transition: background 0.3s;
+}
+
+.pagina-btn:hover {
+    background-color: #444;
+}
+
+.pagina-actual {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.producto {
+    background: linear-gradient(160deg, #222, #333, #444);
+    border: 2px solid gold;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 215, 0, 0.5);
+}
+.producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.producto h2 {
+    font-size: 20px;
+    background: linear-gradient(180deg, #ffd700, #ffcc00, #b8860b);
+    background-clip: text;  
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 8px rgba(255, 215, 0, 0.8);
+}
+.producto p {
+    color: #ddd;
+}
+
+/* Botón de comprar con efecto dorado */
+.producto button {
+    background: linear-gradient(180deg, #ffd700, #ffcc00, #b8860b);
+    border: none;
+    color: #222;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 2px 5px rgba(255, 215, 0, 0.5);
+}
+.producto button:hover {
+    background: linear-gradient(180deg, #ffcc00, #ffb700);
+    transform: scale(1.05);
+}
+
+/* Botón de volver */
+.back-button {
+    background: linear-gradient(180deg, #ffd700, #ffcc00, #b8860b);
+    border: none;
+    padding: 12px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #222;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 2px 5px rgba(255, 215, 0, 0.5);
+}
+.back-button:hover {
+    background: linear-gradient(180deg, #ffcc00, #ffb700);
+    transform: scale(1.05);
+}
