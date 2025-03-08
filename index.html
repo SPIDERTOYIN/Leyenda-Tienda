@@ -129,7 +129,7 @@ function mostrarProductos(categoria, pagina = 1) {
 
         div.innerHTML = `
             <img src="imagenes/${producto.imagen}" alt="${producto.nombre}">
-            <p style="color: ${producto.disponible ? 'green' : 'red'};">
+            <p style="color: ${producto.disponible ? '#00FF00' : 'red'};">
                 ${producto.disponible ? "Disponible" : "Entrega 10-14 días"}
             </p>
             <button onclick="comprar('${producto.nombre}')">Comprar $${producto.precio}</button>
